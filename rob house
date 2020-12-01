@@ -1,0 +1,21 @@
+#How to rob the maximum amount by robbing non-adjacent houses.
+# Algorithm f(n) = max(f(n-2)+f(n), f(n-1)) f(n) is the number in list [nums]
+# the middle number f(n-1) always be the maximum result from last comparison 
+#  eg. [6 1 2 3] when f(n) = 2 , actually, the comparison arry is 6 6 2, and current = max(6+2, 6) = 8
+#      then when num moves to 3, the comparison arry is 6 8 3, so current = max(6+3, 8) = 9
+
+class Solution:
+  
+  def robhouse(self, nums:list[int]) -> int:
+  
+      prev = last = 0
+      
+      for n in nums:
+      
+        prev = last    #n-2
+        
+        last = curr    #n-1 is the max result from previous comparison
+        
+        curr = max(prev+n, last)
+        
+        return curr
