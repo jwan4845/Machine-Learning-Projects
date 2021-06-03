@@ -1,0 +1,11 @@
+Manually complete the K-Means clustering algorithm step by step:
+
+1. Random select centroids
+
+2. Calculated the distances between each point and centroids
+
+3. Assign each point to specific clusters
+
+4. Re-calculate the centroids and adjust the clusters
+
+5. Visualization
