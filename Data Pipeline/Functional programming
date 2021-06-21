@@ -1,0 +1,30 @@
+Functional Programming
+
+1. map() with lambda
+
+lines = [1,2,3,4]
+lines = list(map(lambda x : x**2, lines))
+lines 
+
+[1,4,9,16]
+
+2. filter()
+
+values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+filtered = list(filter(lambda x: x%2==0,values))
+filtered
+
+[2,4,6,8,10]
+
+3. reduce()
+
+from functools import reduce
+
+values = [1, 2, 3, 4]
+summed = reduce(lambda a, b: a + b, values)
+summed  10
+
+values = ['a','b','c','d','e','f','g']
+counted = reduce(lambda x,_: 2 if isinstance(x,str) else x+1)
+#counted is the length of the list
+counted = 7
