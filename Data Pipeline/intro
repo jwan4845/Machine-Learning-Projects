@@ -1,0 +1,6 @@
+In data engineering, data pipeline is the real power behind production-grade databases, the optimization of SQL tables, and data structures and algorithms.
+
+In data pipeline, each task receives input and return output used in the next task.
+
+[RAW DATA] --> [DATA ANALYSIS] --> [STORE DATA] --> [SUMMERIZED]
+
